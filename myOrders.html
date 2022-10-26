@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./logos&icons/logo_bota_fora.svg" type="img">
+    <script src="https://kit.fontawesome.com/03e3ff3564.js" crossorigin="anonymous"></script>
+    <title>My orders</title>
+    <style>
+        :root{
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .orders{
+            width: 100%;
+            display: grid;
+           place-items: center;
+        }
+
+        .orders-container{
+            display: grid;
+            grid-template-rows: 1fr ;
+            width: 400px;
+        }
+
+        .title{
+            font-size: var(--lg);
+            display: none;
+            margin: 0 0 40px;
+            padding: 0 12px;
+        }
+        .my-order-content{
+          display: flex;
+          flex-direction: column;
+        }
+        .history-orders{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 16px;
+            align-items: center;
+            padding: 0  20px 0  12px;
+        }
+        .history-orders .facts span:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            color: var(--black);
+            
+        }
+        .history-orders .facts span:nth-child(2){
+           font-size: var(--sm);
+           color: var(--very-light-pink);
+        }
+        .history-orders p:nth-child(1),
+        .history-orders p:nth-child(2){
+          display: flex;
+          flex-direction: column;
+        }
+
+        .history-orders p:nth-child(2){
+           justify-self: end;
+           font-size: var(--md);
+           font-weight: bold;
+           margin:0 8px 0 0; 
+        }
+        .fa-solid {
+         color:var(--very-light-pink);
+         height: 10px;
+        }
+
+        @media(min-width:640px){
+            .title{
+                display: grid;
+                margin: 0 0 40px;
+                padding: 0;
+            }
+            .orders{
+                height: 100vh;
+            }
+            .history-orders{
+                padding: 0%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="orders">
+        <div class="orders-container">
+           <div class="my-order-content">
+            <h1 class="title">My orders</h1>
+             <div class="history-orders">
+                <p class="facts">
+                    <span>04.25.2022</span>
+                    <span>6 articles</span>
+                </p>
+                <p>$ 120,00</p>
+                <img src="./icons/flechita.svg" alt="flecha">
+             </div>
+             <div class="history-orders">
+                <p class="facts">
+                   <span>04.25.2022</span>
+                   <span>6 articles</span>
+                </p>
+               <p>$ 124,00</p>
+               <img src="./icons/flechita.svg" alt="flecha">
+             </div>
+             <div class="history-orders">
+                <p class="facts">
+                    <span>04.25.2022</span>
+                    <span>6 articles</span>
+                 </p>
+               <p>$ 100,00</p>
+               <img src="./icons/flechita.svg" alt="flecha">
+             </div>
+             <div class="history-orders">
+                <p class="facts">
+                    <span>04.25.2022</span>
+                    <span>6 articles</span>
+                 </p>
+               <p>$ 120,00</p>
+               <img src="./icons/flechita.svg" alt="flecha">
+             </div>
+             <div class="history-orders">
+                <p class="facts">
+                    <span>04.25.2022</span>
+                    <span>6 articles</span>
+                 </p>
+                <p>$ 80,00</p>
+                <img src="./icons/flechita.svg" alt="flecha">
+              </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
